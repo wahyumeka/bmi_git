@@ -79,11 +79,11 @@
 					<?php
 					if(isset($_POST['submit'])) { 
    					$berat = $_POST['berat'];
-    				$tinggi = $_POST['tinggi'];
+	    			$tinggi = $_POST['tinggi'];
 
    					 function bmi($berat,$tinggi) {
         			$bmi = $berat/($tinggi*$tinggi);
-       				 return $bmi;}   
+       				 return $bmi;}
 
 				    $bmi = bmi($berat,$tinggi); //<--- this is critical
 

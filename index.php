@@ -39,13 +39,13 @@
 
 				<div class="wrap-input100 validate-input" data-validate="Name is required">
 					<span class="label-input100">Berat dalam kg</span>
-					<input class="input100" type="text" name="berat" placeholder="Masukan berat badan anda">
+					<input class="input100" type="text" name="berat" placeholder="Masukan berat badan anda" value="<?php if(!empty($_POST['berat'])){ echo $_POST['berat']; }?>" required>
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 					<span class="label-input100">Tinggi dalam m</span>
-					<input class="input100" type="text" name="tinggi" placeholder="Masukkan tinggi badan anda">
+					<input class="input100" type="text" name="tinggi" placeholder="Masukkan tinggi badan anda" value="<?php if(!empty($_POST['tinggi'])){ echo $_POST['tinggi']; }?>" required>
 					<span class="focus-input100"></span>
 				</div>
 
